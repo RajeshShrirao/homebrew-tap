@@ -5,21 +5,21 @@
 class Specwatch < Formula
   desc "Spec-driven architectural drift detector for the terminal"
   homepage "https://github.com/RajeshShrirao/Specwatch"
-  version "0.1.0"
+  version "0.2.0"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/RajeshShrirao/Specwatch/releases/download/v0.1.0/specwatch_macOS_x86_64.tar.gz"
-      sha256 "de85020832c9b2b05c0c69fc1cda3b4189eb96a686b73966f1b23599af380eea"
+      url "https://github.com/RajeshShrirao/Specwatch/releases/download/v0.2.0/specwatch_macOS_x86_64.tar.gz"
+      sha256 "deea377e3d3bfadd1c5276264e1f3a300b4fb0430875e3b34c4af10c68820721"
 
       define_method(:install) do
         bin.install "specwatch"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/RajeshShrirao/Specwatch/releases/download/v0.1.0/specwatch_macOS_arm64.tar.gz"
-      sha256 "d1c73362b3856eff8f1dfc5e90c6797364ddb25ef5827da9724de02bc6cbbf23"
+      url "https://github.com/RajeshShrirao/Specwatch/releases/download/v0.2.0/specwatch_macOS_arm64.tar.gz"
+      sha256 "289fdbf8f7f8434c3c92051cd027b7ebab524ed7867cab35e37a0bc7d15fcebf"
 
       define_method(:install) do
         bin.install "specwatch"
@@ -29,15 +29,15 @@ class Specwatch < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/RajeshShrirao/Specwatch/releases/download/v0.1.0/specwatch_Linux_x86_64.tar.gz"
-      sha256 "23b22184cf0a43d793ff8a0d7a03537a8f21b14c42aa63763e5c3c43e6be747f"
+      url "https://github.com/RajeshShrirao/Specwatch/releases/download/v0.2.0/specwatch_Linux_x86_64.tar.gz"
+      sha256 "70b8630e0474d82ad49aadb00a24f5a145d73d92f349bd5b02a00b53809920cb"
       define_method(:install) do
         bin.install "specwatch"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/RajeshShrirao/Specwatch/releases/download/v0.1.0/specwatch_Linux_arm64.tar.gz"
-      sha256 "ed816c5fc0f82e852697ec460f384b72966752ac30d7bdb6fd5b89bff72a2bba"
+      url "https://github.com/RajeshShrirao/Specwatch/releases/download/v0.2.0/specwatch_Linux_arm64.tar.gz"
+      sha256 "a64c8a0e3277e9869dd1a48241e92d7b32f3f3e2ed061aee39ca3a5ccf3ee553"
       define_method(:install) do
         bin.install "specwatch"
       end
